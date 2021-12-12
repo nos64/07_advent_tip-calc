@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip calculator</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#1a1818">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Roboto+Mono:wght@700&display=swap"
+    rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="tip-calc">
+    <div class="container">
+      <div class="tip-output">
+        <p class="tip__text">Tip Amount</p>
+        <span class="tip__text-symbol">$</span>
+        <div class="tip__value">0</div>
+      </div>
+      <div class="total-output">
+        <p class="total__text">Total Per Person</p>
+        <span class="total__text-symbol">$</span>
+        <div class="total__value">0</div>
+      </div>
+      <form class="form" action="">
+        <div class="calc__wrapper">
+          <div class="bill-amount__wrapper">
+            <div class="bill-amount">
+              <div class="bill-amount__money">
+                <img class="bill-amount__symbol" src="images/dollar.svg" alt="">
+                <input class="bill-amount__value" name="billValue" type="numbert" required>
+              </div>
+              <p class="bill-amount__text">Bill Amount</p>
+            </div>
+            <div class="number-of-peple">
+              <div class="number-of-peple__person">
+                <img class="number-of-peple__symbol" src="images/people.svg" alt="">
+                <input class="number-of-peple__value" name="peopleValue" type="number" required>
+              </div>
+              <p class="number-of-peple__text">Number of People</p>
+            </div>
+          </div>
+          <div class="tip-percent">
+            <div class="tip-percent__btn">
+              <input type="radio" name="radio" id="radio5" value="0.05" checked>
+              <label for="radio5">5%</label>
+            </div>
+            <div class="tip-percent__btn">
+              <input type="radio" name="radio" id="radio10" value="0.1">
+              <label for="radio10">10%</label>
+            </div>
+            <div class="tip-percent__btn">
+              <input type="radio" name="radio" id="radio15" value="0.15">
+              <label for="radio15">15%</label>
+            </div>
+            <div class="tip-percent__btn">
+              <input type="radio" name="radio" id="radio20" value="0.2">
+              <label for="radio20">20%</label>
+            </div>
+          </div>
+          <div class="calc-btn__wrapper">
+            <span class="warning-mesage">Please fill in all fields</span>
+            <button class="calc-btn">Calculate</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
